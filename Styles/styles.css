@@ -1,4 +1,45 @@
+:root{
+    --clr-site-background: #161515;
+    --clr-white: #ffffff;
+    --clr-navbar: #292b2a;
+}
+
+
 *{
+    margin: none;
+    padding: auto;
+}
+
+body{
+    background-color: var(--clr-site-background);
+    color: var(--clr-white);  
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: var(--clr-navbar);
+    padding: 0.5rem 1rem;
+}
+
+
+.nav-links{
+    list-style-type: none;
+    display: flex;
     margin: 0;
     padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links a:hover{
+    color: purple;
 }
