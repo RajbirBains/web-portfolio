@@ -43,3 +43,18 @@ body{
 .nav-links a:hover{
     color: purple;
 }
+
+.wrapper{
+    justify-items: center;
+    padding: auto;
+
+}
+
+.about-div{
+    justify-items: center;
+    align-items: center;
+}
+
+.about-header{
+    justify-self: center;
+}
