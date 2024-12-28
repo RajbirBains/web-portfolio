@@ -1,18 +1,39 @@
+/* Import font from google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+IE+Guides&display=swap');
+
+
 :root{
     --clr-site-background: #161515;
     --clr-white: #ffffff;
     --clr-navbar: #292b2a;
+    --clr-navbar-link-hover: #67dbe4;
 }
 
-
 *{
-    margin: none;
-    padding: auto;
+    margin: 0;
+    padding: 0;
 }
 
 body{
     background-color: var(--clr-site-background);
     color: var(--clr-white);  
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-logo{
+    font-size: 2rem;
+}
+
+.nav-logo:hover{
+    cursor: default;
 }
 
 .navbar{
@@ -38,11 +59,56 @@ body{
 .nav-links a {
     text-decoration: none;
     color: #fff;
+    font-size: 1.5rem;
 }
 
 .nav-links a:hover{
-    color: purple;
+    color: var(--clr-navbar-link-hover);
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
 }
+
+
+
+.nav-menu-toggle{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-menu-toggle .bar{
+    height: 3px;
+    width: 25px;
+    background-color: var(--clr-white);
+    margin: 3px 0;
+}
+
+/* Responsiveness: add menubar when screen is smaller */
+@media screen and (max-width: 800px) {
+    .nav-menu-toggle{
+        display: flex;
+    }
+
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--clr-navbar);
+        position: absolute;
+        top: 3.5rem;
+        left: 0px;
+    }
+
+    .nav-links li{
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+}
+
 
 .wrapper{
     justify-items: center;
