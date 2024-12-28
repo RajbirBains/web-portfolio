@@ -18,43 +18,74 @@
         </div>
 
         <ul class="nav-links">
+            <li class="nav-item" id="profile">
+                <a href="#profile-section" class="nav-link-item">Profile</a>
+            </li>
+
             <li class="nav-item" id="about">
-                <a href="#aboutSection" class="nav-link-item">About</a>
+                <a href="#about-me-section" class="nav-link-item">About</a>
             </li>
 
             <li class="nav-item" id="experience">
-                <a href="#experienceSection" class="nav-link-item">Experience</a>
+                <a href="#experience-section" class="nav-link-item">Experience</a>
             </li>
 
             <li class="#technologiesSection" id="technologies">
-                <a href="#technologiesSection" class="nav-link-item">Technologies</a>
+                <a href="#technologies-section" class="nav-link-item">Technologies</a>
             </li>
 
             <li class="nav-item" id="somethingelse">
-                <a href="#somethingelseSection" class="nav-link-item">Something Else</a>
+                <a href="#random-section" class="nav-link-item">Something Else</a>
             </li>
         </ul>
     </nav>
 
-    <div class="wrapper">
-        <div class="headerDiv">
-            <h1 class="header">Portfolio Website</h1>
+    <section id="profile-section">
+        <div class="section-pic-container">
+            <img src="./Resources/IMG_E1290.JPG" width="250px" height="260px" style="border-radius: 45%; ">
         </div>
 
-        <div class="aboutDiv">
-            <h3 class="aboutHeader" id="aboutSection">About</h3>
+        <div class="section-text">
+            <p class="section-text-p1"><strong>Hello</strong>, my name is</p>
+            <h1 class="section-profile-name">Rajbir Bains</h1>
+            <p class="section-text-p2">and I am a Computer Science student at Simon Fraser University</p>
+            <div class="btn-container">
+                <button class="btn btn-resume" onclick="window.open('./Resources/Rajbir Bains Resume Filler.pdf')">
+                    My Resume
+                </button>
+            </div>
+
         </div>
+    </section>
 
-        <div>
-            <h3 class="technologiesHeader" id="technologiesSection">Technologies</h3>
+    <section id="about-me-section">
+        <div class="about-me-text-container">
+            <h1>About Me</h1>
+            <p>Random text about me</p>
         </div>
+    </section>
 
-        <div>
-            <h3 class="somethingelseHeader" id="somethingelseSection">Something Else</h3>
+    <section id="experience-section">
+        <div class="about-me-text-container">
+            <h1>Experience</h1>
+            <p>3 Co-ops at FH</p>
         </div>
-    </div>
+    </section>
 
+    <section id="technologies-section">
+        <div class="about-me-text-container">
+            <h1>Technologies</h1>
+            <p>C++. Python, HTML, CSS, JavaScript</p>
+        </div>
+    </section>
 
+    <section id="random-section">
+        <div class="about-me-text-container">
+            <h1>Random text</h1>
+            <p>Random text.</p>
+            <p>Still don't know what to put here yet</p>
+        </div>
+    </section>
     
 </body>
 </html>

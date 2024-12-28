@@ -8,6 +8,8 @@
     --clr-white: #ffffff;
     --clr-navbar: #292b2a;
     --clr-navbar-link-hover: #67dbe4;
+    --clr-btn: #c4c2c2;
+    --clr-btn-hover: #85e2e9;
 }
 
 *{
@@ -42,6 +44,8 @@ html {
     align-content: center;
     background-color: var(--clr-navbar);
     padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0px;
 }
 
 
@@ -110,17 +114,97 @@ html {
 }
 
 
-.wrapper{
-    justify-items: center;
-    padding: auto;
 
+section{
+    padding-top: 10vh;
+    height: 90vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
 }
 
-.about-div{
-    justify-items: center;
-    align-items: center;
+
+/* Profile */
+.section-pic-container{
+    margin: auto 0;
 }
 
-.about-header{
-    justify-self: center;
+#profile-section{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    height: 80vh;
+}
+
+.section-text{
+    align-self: center;
+    text-align: center;
+}
+
+.section-text p{
+    font-weight: 400;
+}
+
+.section-text-p1{
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.section-text-p2{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-profile-name{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn{
+    border-radius: 15%;
+    height: 4rem;
+    width: 10rem;
+    background-color: var(--clr-btn);
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: var(--clr-btn-hover);
+}
+
+/* About Me */
+#about-me-section{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    height: 80vh;
+}
+
+/* Experience */
+#experience-section{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    height: 80vh;
+}
+
+
+/* Technologies */
+#technologies-section{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    height: 80vh;
+}
+
+
+/* Random */
+#random-section{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    height: 80vh;
 }
