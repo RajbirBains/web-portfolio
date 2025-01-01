@@ -8,7 +8,7 @@
     --clr-white: #ffffff;
     --clr-navbar: #292b2a;
     --clr-navbar-link-hover: #67dbe4;
-    --clr-btn: #c4c2c2;
+    --clr-btn: #e0e0e0;
     --clr-btn-hover: #85e2e9;
 }
 
@@ -116,7 +116,7 @@ html {
 
 
 section{
-    padding-top: 10vh;
+    padding-top: 20vh;
     height: 90vh;
     margin: 0 10rem;
     box-sizing: border-box;
@@ -163,11 +163,24 @@ section{
     margin-bottom: 0.5rem;
 }
 
+.section-profile-location{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.section-profile-age{
+    font-size: 1.5rem;
+    /* padding-bottom: 1rem; */
+}
+
 .btn{
-    border-radius: 15%;
+    border-radius: 2rem;
     height: 4rem;
     width: 10rem;
+    padding: 1rem;
+    font-weight: 600;
     background-color: var(--clr-btn);
+    border: white solid 0.1rem;
 }
 
 .btn:hover{
@@ -183,6 +196,17 @@ section{
     height: 80vh;
 }
 
+.about-me-header{
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.about-me-text-p1{
+    font-size: 1rem;
+}
+
+
 /* Experience */
 #experience-section{
     display: flex;
@@ -191,6 +215,15 @@ section{
     height: 80vh;
 }
 
+.experience-header{
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.experience-li{
+    padding-left: 2rem;
+}
 
 /* Technologies */
 #technologies-section{
@@ -200,6 +233,17 @@ section{
     height: 80vh;
 }
 
+.technologies-header{
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.technology-logo{
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem;
+}
 
 /* Random */
 #random-section{
