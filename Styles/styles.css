@@ -197,14 +197,15 @@ section{
 }
 
 .about-me-header{
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     padding-bottom: 1rem;
 }
 
 .about-me-text-p1{
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-align: center;
+    width: 55vw;
 }
 
 
@@ -217,12 +218,25 @@ section{
 }
 
 .experience-header{
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     padding-bottom: 1rem;
 }
 
+.experience-company-FH-title{
+    font-size: 1.4rem;
+}
+
+.experience-company-FH{
+    font-size: 1.3rem;
+}
+
+.experience-company-FH-desc{
+    font-size: 1.3rem;
+}
+
 .experience-li{
+    font-size: 1.3rem;
     padding-left: 2rem;
 }
 
@@ -235,7 +249,7 @@ section{
 }
 
 .technologies-header{
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     padding-bottom: 0.5rem;
 }
@@ -252,4 +266,10 @@ section{
     justify-content: center;
     gap: 4rem;
     height: 80vh;
+}
+
+.random-header{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
 }
